@@ -19,21 +19,29 @@
             padding: 2px;
             
         }
+       tr > th{
+            font-size: 18px;
+        }
+       
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     <table>
-        <caption>
-            <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
-            </tr>
-        </caption>
+        <thead>
+            <caption>
+                Filmes Favoritos
+            </caption>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+        </thead>
+        
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Bruna</td>
                 <td>Barbie</td>
                 <td>Toy Story</td>
@@ -52,7 +60,7 @@
                 <td>Fragmentado</td>
             </tr>
             <tr> 
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>João</td>
                 <td>Matrix</td>
                 <td>Rambo</td>
