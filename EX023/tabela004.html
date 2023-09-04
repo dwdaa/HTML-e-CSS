@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        table{
+            width: 600px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>
+            <tr>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </caption>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Bruna</td>
+                <td>Barbie</td>
+                <td>Toy Story</td>
+                <td>Nemo</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>Lady Bird</td>
+                <td>Little Woman</td>
+                <td>Tinker Bell</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>Pânico</td>
+                <td>Hereditário</td>
+                <td>Fragmentado</td>
+            </tr>
+            <tr> 
+                <th rowspan="3">Homens</th>
+                <td>João</td>
+                <td>Matrix</td>
+                <td>Rambo</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Flávio</td>
+                <td>Gente Grande</td>
+                <td>Golpe Baixo</td>
+                <td>Free Guy</td>
+            </tr>
+            <tr>
+                <td>Renan</td>
+                <td>A chegada</td>
+                <td>Um contratempo</td>
+                <td>Efeito Borboleta</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
